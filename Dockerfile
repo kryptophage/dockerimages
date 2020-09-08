@@ -4,7 +4,6 @@
 # Minimum Panel Version: 0.6.0
 # ----------------------------------
 FROM scratch
-ADD rootfs.tar.xz /
 
 RUN apk add --no-cache curl ca-certificates openssl git tar bash sqlite fontconfig expect && adduser -D -h /home/container container
 
